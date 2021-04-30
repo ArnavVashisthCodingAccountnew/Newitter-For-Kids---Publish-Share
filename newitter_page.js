@@ -51,7 +51,6 @@
   {
     console.log("clicked on like button - " + message_id);
       button_id = message_id;
-      document.getElementById("PIN").innerHTML = PIN;
       likes = document.getElementById(button_id).value;
       updated_likes = Number(likes) + 1;
       console.log(updated_likes);
