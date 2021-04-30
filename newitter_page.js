@@ -1,4 +1,4 @@
- // Your web app's Firebase configuration
+  // Your web app's Firebase configuration
  var firebaseConfig = {
     apiKey: "AIzaSyCLGpxZs2pD9mqZCrFwuOI0gYPdRWN5Ksw",
     authDomain: "kwitter-6abca.firebase.com",
@@ -14,7 +14,7 @@
   
       user_name = localStorage.getItem("user_name");
       room_name = localStorage.getItem("room_name");
-  
+    staff = localStorage.getItem("staff");
   function send()
   {
     msg = document.getElementById("msg").value;
@@ -59,16 +59,17 @@
       firebase.database().ref(room_name).child(message_id).update({
           like : updated_likes  
        });
-if (PIN = 45213 ){
+if (staff == "true"){
   firebase.database().ref(room_name).child(message_id).update({
     message : "This Post has been deleted due to malcontent."  
  });
+}
 }
       
     
   
        
-  }
+  
   
   function logout() {
   localStorage.removeItem("user_name");
