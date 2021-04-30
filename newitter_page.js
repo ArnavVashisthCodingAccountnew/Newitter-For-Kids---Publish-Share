@@ -41,7 +41,7 @@
            span_with_tag = "<span class='glyphicon glyphicon-thumbs-up'>Like: "+ like +"</span>" + "<br>" ;
 
 
-          row = "<input type='text' id='PIN' placeholder='Only for support'> </input>" + name_with_tag + message_with_tag +like_button + span_with_tag ;       
+          row = name_with_tag + message_with_tag +like_button + span_with_tag ;       
           document.getElementById("output").innerHTML += row;
   //End code
         } });  }); }
